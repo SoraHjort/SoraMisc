@@ -1,0 +1,1344 @@
+<head>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pixelated" type="text/css"/> 
+<style>
+
+	body {
+		background-color: black;
+		}
+
+	* {
+		font-family: 'SFPixelateBold';
+		text-rendering: geometricPrecision;
+		color: #888;
+		}
+
+	/* [----Walking Down----]*/
+	
+	#walk_down {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: walk_down 1s steps(1) infinite;
+		}
+	
+	
+	@keyframes walk_down {
+
+		from{
+				background-position: -375px -53px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -375px -101px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -375px -53px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -375px -101px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+		
+
+
+
+	#walk_down_noflip_1 {
+		width: 16px;
+		height: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: walk_down_NF1 1s steps(1) infinite;
+		
+		}
+
+	#walk_down_noflip_2 {
+		width: 16px;
+		height: 8px;
+		bottom: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: walk_down_NF2 1s steps(1) infinite;
+		
+		}
+		
+	#walk_down_noflip {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		
+		}
+
+	@keyframes walk_down_NF1 {
+
+		from{
+				background-position: -375px -53px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -375px -101px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -375px -53px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -375px -101px;
+				transform: scale(1, 1);
+			}
+			
+		}
+
+	@keyframes walk_down_NF2 {
+
+		from{
+				background-position: -375px -61px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -375px -109px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -375px -61px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -375px -109px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+
+
+	/* [----Walking Up----]*/
+	
+	#walk_up {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: walk_up 1s steps(1) infinite;
+		
+		}
+	
+	
+	@keyframes walk_up {
+
+		from{
+				background-position: -375px -69px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -375px -117px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -375px -69px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -375px -117px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+		
+
+
+	#walk_up_noflip_1 {
+		width: 16px;
+		height: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: walk_up_NF1 1s steps(1) infinite;
+		
+		}
+
+	#walk_up_noflip_2 {
+		width: 16px;
+		height: 8px;
+		bottom: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: walk_up_NF2 1s steps(1) infinite;
+		
+		}
+		
+	#walk_up_noflip {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		
+		}
+
+	@keyframes walk_up_NF1 {
+
+		from{
+				background-position: -375px -69px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -375px -117px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -375px -69px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -375px -117px;
+				transform: scale(1, 1);
+			}
+			
+		}
+
+	@keyframes walk_up_NF2 {
+
+		from{
+				background-position: -375px -77px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -375px -125px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -375px -77px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -375px -125px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+
+	/* [----Walking Left----]*/
+	
+	#walk_left {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: walk_left 1s steps(1) infinite;
+		
+		}
+	
+	
+	@keyframes walk_left {
+
+		from{
+				background-position: -375px -85px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -375px -133px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -375px -85px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -375px -133px;
+				transform: scale(1, 1);
+			}
+			
+		}
+		/* [----Surfing Down----]*/
+	
+	#surf_down {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: surf_down 1s steps(1) infinite;
+		
+		}
+	
+	
+	@keyframes surf_down {
+
+		from{
+				background-position: -438px -53px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -438px -101px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -438px -53px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -438px -101px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+
+
+	#surf_down_noflip_1 {
+		width: 16px;
+		height: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: surf_down_NF1 1s steps(1) infinite;
+		
+		}
+
+	#surf_down_noflip_2 {
+		width: 16px;
+		height: 8px;
+		bottom: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: surf_down_NF2 1s steps(1) infinite;
+		
+		}
+		
+	#surf_down_noflip {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		
+		}
+
+	@keyframes surf_down_NF1 {
+
+		from{
+				background-position: -438px -53px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -438px -101px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -438px -53px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -438px -101px;
+				transform: scale(1, 1);
+			}
+			
+		}
+
+	@keyframes surf_down_NF2 {
+
+		from{
+				background-position: -438px -61px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -438px -109px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -438px -61px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -438px -109px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+
+	/* [----Surfing Up----]*/
+	
+	#surf_up {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: surf_up 1s steps(1) infinite;
+		
+		}	
+	
+	@keyframes surf_up {
+
+		from{
+				background-position: -438px -69px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -438px -117px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -438px -69px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -438px -117px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+
+
+	#surf_up_noflip_1 {
+		width: 16px;
+		height: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: surf_up_NF1 1s steps(1) infinite;
+		
+		}
+
+	#surf_up_noflip_2 {
+		width: 16px;
+		height: 8px;
+		bottom: 8px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: surf_up_NF2 1s steps(1) infinite;
+		
+		}
+		
+	#surf_up_noflip {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		
+		}
+
+	@keyframes surf_up_NF1 {
+
+		from{
+				background-position: -438px -69px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -438px -117px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -438px -69px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -438px -117px;
+				transform: scale(1, 1);
+			}
+			
+		}
+
+	@keyframes surf_up_NF2 {
+
+		from{
+				background-position: -438px -77px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -438px -125px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -438px -77px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -438px -125px;
+				transform: scale(-1, 1);
+			}
+			
+		}
+
+	/* [----Surfing Left----]*/
+	
+	#surf_left {
+		width: 16px;
+		height: 16px;
+		margin: 2px;
+		background: transparent url('./sprite_sheet.png') no-repeat;
+		animation: surf_left 1s steps(1) infinite;
+		
+		}
+	
+	
+	@keyframes surf_left {
+
+		from{
+				background-position: -438px -85px;
+				transform: scale(1, 1);
+			}
+			
+		25% {
+				background-position: -438px -133px;
+				transform: scale(1, 1);
+			}
+			
+		50% {
+				background-position: -438px -85px;
+				transform: scale(1, 1);
+			}
+			
+		75% {
+				background-position: -438px -133px;
+				transform: scale(1, 1);
+			}
+			
+		}
+		
+		
+			
+		#fish_up, #fish_down, #fish_left {
+			margin: 2px;
+			}
+		#fish_up, #fish_down {
+			width: 16px;
+			}
+		#fish_left {
+			width: 24px;
+			}
+			
+		#fish_left_1, #fish_left_2 {
+			float: left;
+			}
+			
+			
+
+		#fish_down_a {
+			width: 8px;
+			height: 8px;
+			position: relative;
+			top: 1px;
+			}
+		
+		#fish_down_b {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -375px -53px no-repeat;
+			}
+			
+		#fish_down_c {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -481px -141px no-repeat;
+			}
+		#fish_down_d {
+			width: 8px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -529px -141px no-repeat;
+			}
+
+
+
+		#fish_up_a {
+			width: 8px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -529px -141px no-repeat;
+			transform: scale(1,-1);
+			position: relative;
+			top: 0px;
+			z-index: 1;
+			}
+
+		#fish_up_b {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -375px -69px no-repeat;
+			z-index: 2;
+			}
+			
+		#fish_up_c {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -497px -141px no-repeat;
+			z-index: 2;
+			}
+			
+		#fish_up_d {
+			width: 8px;
+			height: 8px;
+			}
+
+
+
+		#fish_left_a {
+			width: 8px;
+			height: 8px;
+			}
+
+		#fish_left_b {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -375px -85px no-repeat;
+			}
+			
+		#fish_left_c {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -513px -141px no-repeat;
+			}
+			
+		#fish_left_d {
+			width: 8px;
+			height: 8px;
+			}
+			
+		#fish_left_e {
+			width: 8px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -537px -141px no-repeat;
+			transform: scale(-1,1);
+			}
+			
+		#fish_left_empty {
+			width: 8px;
+			height: 13px;
+			}
+			
+			
+		#sword_up, #sword_down, #sword_left {
+			margin: 2px;
+			}
+		#sword_up, #sword_down {
+			width: 16px;
+			}
+		#sword_left {
+			width: 24px;
+			}
+			
+		#sword_left_1, #sword_left_2 {
+			float: left;
+			}
+			
+			
+
+		#sword_down_a {
+			width: 8px;
+			height: 8px;
+			position: relative;
+			top: 1px;
+			}
+		
+		#sword_down_b {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -375px -53px no-repeat;
+			}
+			
+		#sword_down_c {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -570px -141px no-repeat;
+			}
+		#sword_down_d {
+			width: 8px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -618px -141px no-repeat;
+			}
+
+
+
+		#sword_up_a {
+			width: 8px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -618px -141px no-repeat;
+			transform: scale(1,-1);
+			position: relative;
+			top: 0px;
+			z-index: 1;
+			}
+
+		#sword_up_b {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -375px -69px no-repeat;
+			z-index: 2;
+			}
+			
+		#sword_up_c {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -586px -141px no-repeat;
+			z-index: 2;
+			}
+			
+		#sword_up_d {
+			width: 8px;
+			height: 8px;
+			}
+
+
+
+		#sword_left_a {
+			width: 8px;
+			height: 8px;
+			}
+
+		#sword_left_b {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -375px -85px no-repeat;
+			}
+			
+		#sword_left_c {
+			width: 16px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -602px -141px no-repeat;
+			}
+			
+		#sword_left_d {
+			width: 8px;
+			height: 8px;
+			}
+			
+		#sword_left_e {
+			width: 8px;
+			height: 8px;
+			background: transparent url('./sprite_sheet.png') -626px -141px no-repeat;
+			transform: scale(-1,1);
+			}
+			
+		#sword_left_empty {
+			width: 8px;
+			height: 13px;
+			}
+			
+			
+		/* [------------ BG GUIDE ------------] */
+		
+				#fish_up_bg, #fish_down_bg, #fish_left_bg {
+			margin: 2px;
+			}
+		#fish_up_bg, #fish_down_bg {
+			width: 16px;
+			}
+		#fish_left_bg {
+			width: 24px;
+			}
+			
+		#fish_left_1_bg, #fish_left_2_bg {
+			float: left;
+			}
+
+		#fish_down_a_bg {
+			width: 8px;
+			height: 8px;
+			position: relative;
+			top: 1px;
+			}
+		
+		#fish_down_b_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#fish_down_c_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+		#fish_down_d_bg {
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			}
+
+
+		#fish_up_a_bg {
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			position: relative;
+			top: 0px;
+			}
+
+		#fish_up_b_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#fish_up_c_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#fish_up_d_bg {
+			width: 8px;
+			height: 8px;
+			}
+
+
+		#fish_left_a_bg {
+			width: 8px;
+			height: 8px;
+			}
+
+		#fish_left_b_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#fish_left_c_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#fish_left_d_bg {
+			width: 8px;
+			height: 8px;
+			}
+			
+		#fish_left_e_bg {
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#fish_left_empty_bg {
+			width: 8px;
+			height: 13px;
+			}
+			
+		#sword_up_bg, #sword_down_bg, #sword_left_bg {
+			margin: 2px;
+			}
+		#sword_up_bg, #sword_down_bg {
+			width: 16px;
+			}
+		#sword_left_bg {
+			width: 24px;
+			}
+			
+		#sword_left_1_bg, #sword_left_2_bg {
+			float: left;
+			}
+			
+		#sword_down_a_bg {
+			width: 8px;
+			height: 8px;
+			position: relative;
+			top: 1px;
+			}
+		
+		#sword_down_b_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#sword_down_c_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+		#sword_down_d_bg {
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			}
+
+		#sword_up_a_bg {
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			position: relative;
+			top: 0px;
+			}
+
+		#sword_up_b_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#sword_up_c_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#sword_up_d_bg {
+			width: 8px;
+			height: 8px;
+			}
+
+		#sword_left_a_bg {
+			width: 8px;
+			height: 8px;
+			}
+
+		#sword_left_b_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#sword_left_c_bg {
+			width: 16px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#sword_left_d_bg {
+			width: 8px;
+			height: 8px;
+			}
+			
+		#sword_left_e_bg {
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			}
+			
+		#sword_left_empty_bg {
+			width: 8px;
+			height: 13px;
+			}
+			
+	/* [------------ FINE POSITION ------------] */
+			
+			
+			
+	#zoom_control{
+		transform-origin: top left;
+		transform: scale(8.0);
+		width: 100px;
+		height: 0px;
+		image-rendering: pixelated;
+		}
+			
+	.sprite {
+		border: 1px solid #3698D6;
+		z-index: 1;
+		}
+
+	.spriteNF {
+		border: 1px solid #287F4B;
+		z-index: 1;
+		}
+		
+	.swordandfish {
+		height: 31px;
+		}
+	.fishyswordy {
+		top: -1px;
+		position: relative;
+		}
+			
+	#sword, #fish {
+		width: 75px;
+		}
+
+	#walk, #surf {
+		width: 110px;
+		}
+			
+	.noflip {
+		top: 21px;
+		left: 78px;
+		font-size: 2pt;
+		width: 20px;
+		height: 0px;
+		position: absolute;
+		}
+		
+	.flip {
+		top: 21px;
+		left: 24px;
+		font-size: 2pt;
+		width: 20px;
+		height: 0px;
+		position: absolute;
+		}
+		
+	#sheet {
+		width: 491px;
+		height: 153px;
+		transform: scale(0.25);
+		transform-origin: top left;
+		background: url('./sprite_sheet.png') -152px -37px no-repeat;
+		border: 4px solid #287F4B;
+		margin: 2px;
+		position: absolute;
+		top: 44px;
+		left: 74px;
+		z-index: 2;
+		}
+
+	#sheet_bg {
+		width: 491px;
+		height: 153px;
+		transform: scale(0.25);
+		transform-origin: top left;
+		background: url('https://raw.githubusercontent.com/SoraHjort/SoraResources/main/8x8.png');
+        background-size: 4px;
+		border: 4px solid #287F4B;
+		margin: 2px;
+		position: absolute;
+		top: 44px;
+		left: 74px;
+        z-index: 0;
+		}
+		
+	#note {
+		transform: scale(0.25);
+		transform-origin: top left;
+		background-color: #fff;
+		border: 4px solid #287F4B;
+		position: absolute;
+		margin: 2px;
+		top: 0px;
+		left: 110px;
+		height: 152px;
+		width: 346px;
+		font-size: 7pt;
+		}
+		
+		
+	#walk_down {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		}
+
+	#walk_up {
+		position: absolute;
+		top: 0px;
+		left: 22px;
+		}
+
+	#walk_left {
+		position: absolute;
+		top: 0px;
+		left: 44px;
+		}
+
+	#walk_down_noflip {
+		position: absolute;
+		top: 0px;
+		left: 66px;
+		}
+
+	#walk_up_noflip {
+		position: absolute;
+		top: 0px;
+		left: 88px;
+		}
+
+	#surf_down {
+		position: absolute;
+		top: 22px;
+		left: 0px;
+		}
+
+	#surf_up {
+		position: absolute;
+		top: 22px;
+		left: 22px;
+		}
+
+	#surf_left {
+		position: absolute;
+		top: 22px;
+		left: 44px;
+		}
+
+	#surf_down_noflip {
+		position: absolute;
+		top: 22px;
+		left: 66px;
+		}
+
+	#surf_up_noflip {
+		position: absolute;
+		top: 22px;
+		left: 88px;
+		}
+		
+	#fish_down {
+		position: absolute;
+		top: 44px;
+		left: 0px;
+		}
+
+	#fish_up {
+		position: absolute;
+		top: 44px;
+		left: 22px;
+		}
+
+	#fish_left {
+		position: absolute;
+		top: 44px;
+		left: 44px;
+		}
+
+	#sword_down {
+		position: absolute;
+		top: 81px;
+		left: 0px;
+		}
+
+	#sword_up {
+		position: absolute;
+		top: 81px;
+		left: 22px;
+		}
+
+	#sword_left {	
+		position: absolute;
+		top: 81px;
+		left: 44px;
+		}
+
+	#fish_down_bg {
+		background-color: #287F4B;
+		position: absolute;
+		top: 45px;
+		left: 1px;
+		}
+
+	#fish_up_bg {
+		background-color: #287F4B;
+		position: absolute;
+		top: 45px;
+		left: 23px;
+		}
+
+	#fish_left_bg {
+		background-color: #287F4B;
+		position: absolute;
+		top: 45px;
+		left: 45px;
+		}
+
+	#sword_down_bg {
+		background-color: #287F4B;
+		position: absolute;
+		top: 82px;
+		left: 1px;
+		}
+
+	#sword_up_bg {
+		background-color: #287F4B;
+		position: absolute;
+		top: 82px;
+		left: 23px;
+		}
+
+	#sword_left_bg {
+		background-color: #287F4B;
+		position: absolute;
+		top: 82px;
+		left: 45px;
+		
+		}
+		
+	.sprite_bg {
+		z-index: 0;
+		}
+		
+	.move {
+		background-color: #fff !important;
+		}
+
+</style>
+</head>
+<body>
+<div>
+<div id="zoom_control">
+
+<div id="walk">
+	<div id="walk_down" class="sprite move"></div>
+	<div id="walk_up" class="sprite move"></div>
+	<div id="walk_left" class="sprite move"></div>
+	<div id="walk_down_noflip" class="sprite spriteNF move">
+		<div id="walk_down_noflip_1"></div>
+		<div id="walk_down_noflip_2"></div>
+	</div>
+	<div id="walk_up_noflip" class="sprite spriteNF move">
+		<div id="walk_up_noflip_1"></div>
+		<div id="walk_up_noflip_2"></div>
+	</div>
+	<div class="noflip">Hair Flip Off</div>
+	<div class="flip">Hair Flip On</div>
+</div>
+
+<div id="surf">
+	<div id="surf_down" class="sprite move"></div>
+	<div id="surf_up" class="sprite move"></div>
+	<div id="surf_left" class="sprite move"></div>
+	<div id="surf_down_noflip" class="sprite spriteNF move">
+		<div id="surf_down_noflip_1"></div>
+		<div id="surf_down_noflip_2"></div>
+	</div>
+	<div id="surf_up_noflip" class="sprite spriteNF move">
+		<div id="surf_up_noflip_1"></div>
+		<div id="surf_up_noflip_2"></div>
+	</div>
+</div>
+
+<div id="fish">
+		<div id="fish_down" class="sprite swordandfish">
+			<div id="fish_down_a" class="fishyswordy"></div>
+			<div id="fish_down_b" class="fishyswordy"></div>
+			<div id="fish_down_c" class="fishyswordy"></div>
+			<div id="fish_down_d" class="fishyswordy"></div>
+			</div>
+		<div id="fish_up" class="sprite swordandfish">
+			<div id="fish_up_a" class="fishyswordy"></div>
+			<div id="fish_up_b" class="fishyswordy"></div>
+			<div id="fish_up_c" class="fishyswordy"></div>
+			<div id="fish_up_d" class="fishyswordy"></div>
+		</div>
+
+	<div id="fish_left" class="sprite swordandfish">
+		<div id="fish_left_1" class="fishyswordy">
+			<div id="fish_left_empty"></div>
+			<div id="fish_left_e"></div>
+		</div>
+		<div id="fish_left_2" class="fishyswordy">
+			<div id="fish_left_a"></div>
+			<div id="fish_left_b"></div>
+			<div id="fish_left_c"></div>
+			<div id="fish_left_d"></div>
+		</div>
+	</div>
+</div>
+
+<div id="sword">
+		<div id="sword_down" class="sprite swordandfish">
+			<div id="sword_down_a" class="fishyswordy"></div>
+			<div id="sword_down_b" class="fishyswordy"></div>
+			<div id="sword_down_c" class="fishyswordy"></div>
+			<div id="sword_down_d" class="fishyswordy"></div>
+			</div>
+		<div id="sword_up" class="sprite swordandfish">
+			<div id="sword_up_a" class="fishyswordy"></div>
+			<div id="sword_up_b" class="fishyswordy"></div>
+			<div id="sword_up_c" class="fishyswordy"></div>
+			<div id="sword_up_d" class="fishyswordy"></div>
+		</div>
+
+	<div id="sword_left" class="sprite swordandfish">
+		<div id="sword_left_1" class="fishyswordy">
+			<div id="sword_left_empty"></div>
+			<div id="sword_left_e"></div>
+		</div>
+		<div id="sword_left_2" class="fishyswordy">
+			<div id="sword_left_a"></div>
+			<div id="sword_left_b"></div>
+			<div id="sword_left_c"></div>
+			<div id="sword_left_d"></div>
+		</div>	
+	</div>
+</div>
+<div id="sheet"></div>
+<div id="sheet_bg"></div>
+
+<div id="note">To properly use this, please follow these instructions:<br><br>
+1. The sprite sheet you are using needs to have all white in the overworld sprites be replaced with transparency.<br>So grab that Pick All Color tool and DELETE.<br><br>
+2. The sprite sheet is required to be based on the template. Individual sprites are not supported.
+<br><br>
+3. Save the sprite sheet in the same folder, name it "sprite_sheet.png". Without the quotation marks of course.
+<br><br>Signed: SoraHjort</div>
+
+<div id="fish_bg">
+		<div id="fish_down_bg" class="swordandfish">
+			<div id="fish_down_a_bg" class="fishyswordy sprite_bg"></div>
+			<div id="fish_down_b_bg" class="fishyswordy sprite_bg"></div>
+			<div id="fish_down_c_bg" class="fishyswordy sprite_bg"></div>
+			<div id="fish_down_d_bg" class="fishyswordy sprite_bg"></div>
+			</div>
+		<div id="fish_up_bg" class="swordandfish">
+			<div id="fish_up_a_bg" class="fishyswordy sprite_bg"></div>
+			<div id="fish_up_b_bg" class="fishyswordy sprite_bg"></div>
+			<div id="fish_up_c_bg" class="fishyswordy sprite_bg"></div>
+			<div id="fish_up_d_bg" class="fishyswordy sprite_bg"></div>
+		</div>
+
+	<div id="fish_left_bg" class="swordandfish">
+		<div id="fish_left_1_bg" class="fishyswordy">
+			<div id="fish_left_empty_bg"></div>
+			<div id="fish_left_e_bg" class="sprite_bg"></div>
+		</div>
+		<div id="fish_left_2_bg" class="fishyswordy">
+			<div id="fish_left_a_bg"></div>
+			<div id="fish_left_b_bg" class="sprite_bg"></div>
+			<div id="fish_left_c_bg" class="sprite_bg"></div>
+			<div id="fish_left_d_bg" class="sprite_bg"></div>
+		</div>
+	</div>
+</div>
+
+<div id="sword_bg">
+		<div id="sword_down_bg" class="swordandfish">
+			<div id="sword_down_a_bg" class="fishyswordy sprite_bg"></div>
+			<div id="sword_down_b_bg" class="fishyswordy sprite_bg"></div>
+			<div id="sword_down_c_bg" class="fishyswordy sprite_bg"></div>
+			<div id="sword_down_d_bg" class="fishyswordy sprite_bg"></div>
+			</div>
+		<div id="sword_up_bg" class="swordandfish">
+			<div id="sword_up_a_bg" class="fishyswordy sprite_bg"></div>
+			<div id="sword_up_b_bg" class="fishyswordy sprite_bg"></div>
+			<div id="sword_up_c_bg" class="fishyswordy sprite_bg"></div>
+			<div id="sword_up_d_bg" class="fishyswordy sprite_bg"></div>
+		</div>
+
+	<div id="sword_left_bg" class="swordandfish">
+		<div id="sword_left_1_bg" class="fishyswordy">
+			<div id="sword_left_empty_bg"></div>
+			<div id="sword_left_e_bg" class="sprite_bg"></div>
+		</div>
+		<div id="sword_left_2_bg" class="fishyswordy">
+			<div id="sword_left_a_bg"></div>
+			<div id="sword_left_b_bg" class="sprite_bg"></div>
+			<div id="sword_left_c_bg" class="sprite_bg"></div>
+			<div id="sword_left_d_bg" class="sprite_bg"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+</body>
