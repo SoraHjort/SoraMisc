@@ -1010,7 +1010,7 @@
 		height: 153px;
 		transform: scale(0.25);
 		transform-origin: top left;
-		background: url('https://raw.githubusercontent.com/SoraHjort/SoraResources/main/8x8.png');
+		background: white;
         background-size: 4px;
 		border: 4px solid #287F4B;
 		margin: 2px;
@@ -1181,6 +1181,74 @@
 	.move {
 		background-color: #fff !important;
 		}
+    
+    .multi {
+        mix-blend-mode: multiply;
+        }
+    
+    #check {
+        background-color: #888;
+        }
+    .mates {
+        fill: #666;
+        }
+        
+    #sheet_prof {
+        background: white;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 56px;
+        left: 1px;
+        }
+    #sheet_back {
+        background: white;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 64px;
+        left: 76px;
+        }
+    #sheet_card {
+        background: white;
+        width: 40px;
+        height: 56px;
+        position: absolute;
+        top: 56px;
+        left: 144px;
+        }
+    #sheet_walk {
+        background: white;
+        width: 16px;
+        height: 96px;
+        position: absolute;
+        top: 16px;
+        left: 223px;
+        }
+    #sheet_surf {
+        background: white;
+        width: 16px;
+        height: 96px;
+        position: absolute;
+        top: 16px;
+        left: 286px;
+        }
+    #sheet_fish {
+        background: white;
+        width: 72px;
+        height: 8px;
+        position: absolute;
+        top: 104px;
+        left: 329px;
+        }
+    #sheet_sword {
+        background: white;
+        width: 72px;
+        height: 8px;
+        position: absolute;
+        top: 104px;
+        left: 418px;
+        }
 
 </style>
 </head>
@@ -1220,16 +1288,16 @@
 
 <div id="fish">
 		<div id="fish_down" class="sprite swordandfish">
-			<div id="fish_down_a" class="fishyswordy"></div>
-			<div id="fish_down_b" class="fishyswordy"></div>
-			<div id="fish_down_c" class="fishyswordy"></div>
-			<div id="fish_down_d" class="fishyswordy"></div>
+			<div id="fish_down_a" class="fishyswordy multi"></div>
+			<div id="fish_down_b" class="fishyswordy multi"></div>
+			<div id="fish_down_c" class="fishyswordy multi"></div>
+			<div id="fish_down_d" class="fishyswordy multi"></div>
 			</div>
 		<div id="fish_up" class="sprite swordandfish">
-			<div id="fish_up_a" class="fishyswordy"></div>
-			<div id="fish_up_b" class="fishyswordy"></div>
-			<div id="fish_up_c" class="fishyswordy"></div>
-			<div id="fish_up_d" class="fishyswordy"></div>
+			<div id="fish_up_a" class="fishyswordy multi"></div>
+			<div id="fish_up_b" class="fishyswordy multi"></div>
+			<div id="fish_up_c" class="fishyswordy multi"></div>
+			<div id="fish_up_d" class="fishyswordy multi"></div>
 		</div>
 
 	<div id="fish_left" class="sprite swordandfish">
@@ -1248,16 +1316,16 @@
 
 <div id="sword">
 		<div id="sword_down" class="sprite swordandfish">
-			<div id="sword_down_a" class="fishyswordy"></div>
-			<div id="sword_down_b" class="fishyswordy"></div>
-			<div id="sword_down_c" class="fishyswordy"></div>
-			<div id="sword_down_d" class="fishyswordy"></div>
+			<div id="sword_down_a" class="fishyswordy multi"></div>
+			<div id="sword_down_b" class="fishyswordy multi"></div>
+			<div id="sword_down_c" class="fishyswordy multi"></div>
+			<div id="sword_down_d" class="fishyswordy multi"></div>
 			</div>
 		<div id="sword_up" class="sprite swordandfish">
-			<div id="sword_up_a" class="fishyswordy"></div>
-			<div id="sword_up_b" class="fishyswordy"></div>
-			<div id="sword_up_c" class="fishyswordy"></div>
-			<div id="sword_up_d" class="fishyswordy"></div>
+			<div id="sword_up_a" class="fishyswordy multi"></div>
+			<div id="sword_up_b" class="fishyswordy multi"></div>
+			<div id="sword_up_c" class="fishyswordy multi"></div>
+			<div id="sword_up_d" class="fishyswordy multi"></div>
 		</div>
 
 	<div id="sword_left" class="sprite swordandfish">
@@ -1274,14 +1342,38 @@
 	</div>
 </div>
 <div id="sheet"></div>
-<div id="sheet_bg"></div>
+<div id="sheet_bg">
+<!--
+
+Grabbed and modified the following from: 
+https://css-tricks.com/snippets/svg/svg-patterns/ 
+-->
+<svg id="check" width="100%" height="100%">
+  <pattern id="checked" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect class="mates" x="0" width="2" height="2" y="0"></rect>
+    <rect class="mates" x="2" width="2" height="2" y="2"></rect>
+  </pattern>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#checked)"></rect>
+</svg>
+
+
+<div id="sheet_prof"></div>
+<div id="sheet_back"></div>
+<div id="sheet_card"></div>
+<div id="sheet_walk"></div>
+<div id="sheet_surf"></div>
+<div id="sheet_fish"></div>
+<div id="sheet_sword"></div>
+</div>
 
 <div id="note">To properly use this, please follow these instructions:<br><br>
-1. The sprite sheet you are using needs to have all white in the overworld sprites be replaced with transparency.<br>So grab that Select By Color Tool equivalent and DELETE.<br><br>
-2. The sprite sheet is required to be based on the template. Individual sprites are not supported.
+1. The sprite sheet is required to be based on the template. Individual sprites are not supported.<br>
+If you need the template, you can find it <a href="https://inject.fm1337.com/character">here on the official injector site</a>
 <br><br>
-3. Save the sprite sheet in the same folder, name it "sprite_sheet.png". Without the quotation marks of course.
-<br><br>Signed: SoraHjort</div>
+2. Save the sprite sheet in the same folder, name it "sprite_sheet.png". Without the quotation marks of course.
+<br><br>
+
+Signed: SoraHjort</div>
 
 <div id="fish_bg">
 		<div id="fish_down_bg" class="swordandfish">
