@@ -79,10 +79,11 @@ for (let key in selectedActors) {
         //Save positional data calculation
         let dialogBoxOptions = {
             top: y * 150 - 100,
-            left: x * 200 - 50, 
+            left: x * 200 - 50,
+            //resizable on x works only after dragging, maybe look into later
+            resizable: true, 
             width: "auto",
-            classes: ["dialog", "campaignNotesDialogGGP"],
-            resizable: true
+            classes: ["dialog", "campaignNotesDialogGGP"]
             }
             
             
@@ -117,7 +118,6 @@ for (let key in selectedActors) {
                     max-height:`+maxHeight+`px !important;
                     overflow-x: auto;
                     overflow-y: scroll;
-                    width: auto;
                     backdrop-filter: blur(2px);
                     }
                     
