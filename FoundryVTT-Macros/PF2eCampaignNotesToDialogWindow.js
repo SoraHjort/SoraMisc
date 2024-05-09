@@ -76,6 +76,9 @@ for (let key in selectedActors) {
             font-size: 16pt;
             height: auto;
             }
+        .window-content:has(.dialog-content .campaignNotesDialog ) {
+            background: unset !important;
+            }
         .campaignNotesDialog {
             color:white;
             }
