@@ -80,7 +80,9 @@ for (let key in selectedActors) {
         let dialogBoxOptions = {
             top: y * 150 - 100,
             left: x * 200 - 50, 
-            classes: ["dialog", "campaignNotesDialogGGP"]
+            width: "auto",
+            classes: ["dialog", "campaignNotesDialogGGP"],
+            resizable: true
             }
             
             
@@ -109,14 +111,13 @@ for (let key in selectedActors) {
         let dialogBox = `
             <style>
                 .campaignNotesDialogGGP{
-                    background-color: rgba(0,0,0,0.5);
-                    background-blend-mode: lighten;
+                    background: rgba(0,0,0,0.5);
                     min-width: `+minWidth+`px !important;
                     max-width: `+maxWidth+`px !important;
                     max-height:`+maxHeight+`px !important;
                     overflow-x: auto;
                     overflow-y: scroll;
-                    width: auto !important;
+                    width: auto;
                     backdrop-filter: blur(2px);
                     }
                     
