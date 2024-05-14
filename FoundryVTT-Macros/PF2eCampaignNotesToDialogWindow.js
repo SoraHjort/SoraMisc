@@ -1,4 +1,4 @@
-        /*╔═══════════════════════════════╗*\       
+/*╔═══════════════════════════════╗*\       
         ╔═╝┌─────────────────────────────┐╚═╗       
         ║ ┌┤ [PF2e]Campaign Notes Dialog ├┐ ║       
         ╟─┘└────────┐ SoraHjort ┌────────┘└─╢       
@@ -58,6 +58,7 @@ for (let key in selectedActors) {
 
     //Alias the sheet name and image
     let charName = selectedActor.name;
+    charName = charName.replace(/[^A-Za-z0-9]/, "")
     let charImg = selectedActor.img;
     
     //If campaign notes aren't empty, and also don't already exist within 
