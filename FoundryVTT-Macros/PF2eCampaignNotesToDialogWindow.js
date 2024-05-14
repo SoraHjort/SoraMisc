@@ -58,7 +58,8 @@ for (let key in selectedActors) {
 
     //Alias the sheet name and image
     let charName = selectedActor.name;
-    charName = charName.replace(/[^A-Za-z0-9]/, "")
+    let charName2 = charName.replace(/[^A-Za-z0-9]/, "")
+    let charName3 = "game.actors.getName(`"+charName+"`).sheet.render(true)"
     let charImg = selectedActor.img;
     
     //If campaign notes aren't empty, and also don't already exist within 
@@ -113,7 +114,7 @@ for (let key in selectedActors) {
         let dialogBox = `
             <style>
                 .campaignNotesDialogGGP{
-                    background: rgba(0,0,0,0.5);
+                    background: rgba(0,0,0,0.5) !important;
                     min-width: `+minWidth+`px !important;
                     max-width: `+maxWidth+`px !important;
                     max-height:`+maxHeight+`px !important;
@@ -123,9 +124,11 @@ for (let key in selectedActors) {
                     }
                     
                 .campaignNotesDialogGGP > .window-header{
-                    background: rgba(0,0,0,0.25);
-                    font-size: 16pt;
+                    background: rgba(0,0,0,0.25) !important;
                     height: auto;
+                    }
+                .campaignNotesDialogGGP > .window-header > .window-title{
+                    font-size: 16pt;
                     }
                     
                 .campaignNotesDialogGGP > .window-content {
@@ -136,7 +139,7 @@ for (let key in selectedActors) {
                     color:white;
                     }
                     
-                #charImgFor`+charName+` {
+                #charImgFor`+charName2+` {
                     max-width: 50px;
                     max-height: 100px;
                     float: left;
@@ -148,8 +151,8 @@ for (let key in selectedActors) {
             
             <div class="campaignNotesDialog ">
             
-                <a onClick="game.actors.getName('`+charName+`').sheet.render(true)">
-                    <img id="charImgFor`+charName+`"src="`+charImg+`">
+                <a onClick="${charName3}">
+                    <img id="charImgFor`+charName2+`"src="`+charImg+`">
                 </a>
                 
                 <br>`+ campaignNotes +`
