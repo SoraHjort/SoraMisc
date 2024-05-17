@@ -1,1 +1,33 @@
-
+.campaignNotesDialogGGP{
+    background: rgba(0,0,0,0.5) !important;
+    min-width: `+minWidth+`px !important;
+    max-width: `+maxWidth+`px !important;
+    max-height:`+maxHeight+`px !important;
+    overflow-x: auto;
+    overflow-y: scroll;
+    backdrop-filter: blur(2px);
+    }
+    
+.campaignNotesDialogGGP > .window-header{
+    background: rgba(0,0,0,0.25) !important;
+    height: auto;
+    }
+.campaignNotesDialogGGP > .window-header > .window-title{
+    font-size: 16pt;
+    }
+    
+.campaignNotesDialogGGP > .window-content {
+    background: unset !important;
+    }
+    
+.campaignNotesDialog {
+    color:white;
+    }
+    
+#charImgFor`+charName2+` {
+    max-width: 50px;
+    max-height: 50px;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    }
